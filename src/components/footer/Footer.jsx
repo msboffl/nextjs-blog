@@ -16,7 +16,7 @@ export default function Footer() {
         <div>@2023 Nextjs Blog. All rights reserved</div>
         <div className={styles.social}>
           {social.map((img) => (
-            <Link href={img.url}>
+            <Link href={img.url} key={img.id}>
               <Image src={img.imgPath} width={20} height={20} alt={img.title} />
             </Link>
           ))}
