@@ -19,7 +19,7 @@ export default function Navbar() {
         </Link>
         <div className={styles.links}>
           {links.map((link) => (
-            <Link id={link.id} href={link.url} className={styles.link}>
+            <Link key={link.id} href={link.url} className={styles.link}>
               {link.title}
             </Link>
           ))}
